@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+
+<script>
+
+//Build an object constructor functin
+function person(firstName,lastName,age,eyeColor) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+    this.changeName = function (name) {
+        this.lastName = name;
+    }
+}
+
+//Create an object instance
+var myMother = new person("Mary","Rally",52,"blue");
+
+//display the object
+document.getElementById("demo").innerHTML = "My mother's last name is " + myMother.lastName;
+
+//execute the object method
+myMother.changeName("Doe");
+
+//redisplay the object
+document.getElementById("demo2").innerHTML = "My mother's last name is " + myMother.lastName;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+
+<script>
+
+ 
+var user = {
+    name:  "Mike",
+    age: 35,
+    size: {
+    top: 80,
+    middle: 70,
+    bottom: 60
+  }
+}
+
+
+//alert( user.name ) // "Rose"
+//alert( user.size.top ) // 90
+//display the object
+document.getElementById("demo").innerHTML = "object:" + user.name;
+document.getElementById("demo2").innerHTML = "nested object:" + user.size.top;
+
+
+
+
+
+</script>
+
+</body>
+</html>
